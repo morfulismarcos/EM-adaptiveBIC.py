@@ -8,14 +8,8 @@ from scipy.spatial.distance import jensenshannon
 from scipy.stats import gaussian_kde
 
 
-#file_path = '/Users/marcosmorfulis/Desktop/Input-Puna.xlsx'
-#data = pd.read_excel(file_path,sheet_name='SQ', header=None)
-
-
-#file_path = '/Users/marcosmorfulis/Desktop/Input-Puna.xlsx'
-
-file_path = '/Users/marcosmorfulis/Documents/Proyectos/doctorado/Proyectos/Age Spectra Project/Codes/EM-code/Input-Puna.xlsx'
-data = pd.read_excel(file_path,sheet_name='sHEET1', header=None)
+file_path =
+data = pd.read_excel(file_path,sheet_name='', header=None)
 
 
 #np.random.seed(39)
@@ -143,8 +137,8 @@ def save_bic_results(bic_results, output_file_path):
     Guarda los valores de BIC calculados para cada modelo de mezcla en un archivo Excel.
     
     Parameters:
-    - bic_results: Lista de diccionarios con los BICs para cada distribución y número de componentes.
-    - output_file_path: Ruta donde se guardará el archivo Excel.
+    bic_results: Lista de diccionarios con los BICs para cada distribución y numero de componentes.
+    output_file_path: Ruta donde se guarda el archivo Excel.
     """
     # Convertir a DataFrame
     bic_df = pd.DataFrame(bic_results)
